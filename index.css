@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 5rem 1fr 8rem;
+  background-color: fff;
+  padding: 0.5rem 0.5rem;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+header img {
+  width: 33px;
+  height: 34px;
+}
+
+.paw-icon {
+  width: 20px;
+  height: 25px;
+  color: white;
+}
+
+header div {
+  background: linear-gradient(270deg, #fa695a 0%, #f83375 100%);
+  border-radius: 30px;
+  padding: 0.4rem 2rem;
+}
+
+/* profile section */
+
+.profile {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pro {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-size: cover;
+  position: relative;
+}
+
+.profile div {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.profile div p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.reject-img {
+  width: 12rem;
+  height: 6rem;
+  rotate: -30deg;
+  top: 0;
+  margin-top: 2.8rem;
+  margin-left: 1rem;
+  position: absolute;
+}
+
+.like-img {
+  width: 12rem;
+  height: 6rem;
+  rotate: -30deg;
+  top: 0;
+  margin-top: 2.8rem;
+  margin-left: 1rem;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer div {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: gainsboro 1px 1px 10px 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+footer div img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
