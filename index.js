@@ -1,5 +1,5 @@
 import data from "./data.js";
-var i = 0;
+var i = 0; //dog's data iterator
 
 class Dogs {
   constructor(data) {
@@ -43,11 +43,7 @@ class Dogs {
 document.getElementById("like-div").addEventListener("click", handleLike);
 document.getElementById("reject-div").addEventListener("click", handleReject);
 
-// const teddy = new Dogs(data[0]);
-// document.getElementById("profile").innerHTML = teddy.setHtml();
-
 function render() {
-  //   checkSwipedDog();
   document.getElementById("profile").innerHTML = dog.setHtml();
 }
 
@@ -62,9 +58,8 @@ function handleLike() {
   setTimeout(() => {
     dog = getNewDog();
     render();
+    checkSwipedDog();
   }, 2000);
-
-  //   alert(teddy.hasBeenLiked);
 }
 
 function handleReject() {
@@ -79,11 +74,12 @@ function handleReject() {
   setTimeout(() => {
     dog = getNewDog();
     render();
+    checkSwipedDog();
   }, 2000);
 }
 
 function checkSwipedDog() {
-  if (data[i - 1].hasBeenLiked || data[i - 1].hasBeenSwiped) {
+  if (dog.hasBeenLiked) {
     setTimeout(() => {
       dog = getNewDog();
       render();
@@ -92,7 +88,6 @@ function checkSwipedDog() {
 }
 
 function getNewDog() {
-  //   alert(i);
   const newDogData = data[i];
   if (i < data.length - 1) {
     i += 1;
@@ -103,4 +98,6 @@ function getNewDog() {
 }
 
 let dog = getNewDog();
+checkSwipedDog();
+
 render();

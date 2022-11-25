@@ -42,8 +42,8 @@ header div {
 /* profile section */
 
 .profile {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   position: relative;
 }
 
@@ -115,4 +115,25 @@ footer div {
 footer div img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 100%;
+    /* height: 100vh; */
+    grid-template-rows: 5rem 1fr 8rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .profile {
+    width: 60vh;
+    height: 75vh;
+  }
+
+  .pro {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
 }
